@@ -1,0 +1,16 @@
+POST  http://127.0.0.1:2000/goods HTTP/1.1
+content-type: application/json
+
+{
+    "Name": "Megavdollg",
+    "Description": "My new Ponyss",
+    "Price": 102,
+    "Rating": 3,
+    "Date": "2021-06-03"
+}
+###
+GET  http://127.0.0.1:2000/goods HTTP/1.1
+content-type: application/json
+
+###
+GET http://127.0.0.1:2000/goods/60ce463fea41cf1668f56b15
