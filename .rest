@@ -14,3 +14,6 @@ content-type: application/json
 
 ###
 GET http://127.0.0.1:2000/goods/60ce463fea41cf1668f56b15
+
+###
+GET http://127.0.0.1:2000/goods/ff
