@@ -14,7 +14,7 @@
 |/goods/:id  | DELETE | send id of an item and it will be removed 
 
 ## Docker Guide
-
+It is supposed to work in docker env ,If u want it run without docker , then change mongodb url
 ```
 docker-compose up
 ```
