@@ -37,11 +37,20 @@ const server = http.createServer((req, res) => {
             res.end('ok');
         });
 
+    } else if (req.url.match(/\/goods\/([0-9]+)/) && req.method === 'GET') {
+        id = req.url.split('/')[2]
+        const item = Good.findByIdAndRemove(id, function (err, result) {
+            if (err) {
+                console.error(err)
+            } else {
+                res.writeHead(200, { 'Content-Type': 'application/json' });
+            }
+        })
     } else {
         res.end(JSON.stringify({ message: 'No Route' }));
     }
 });
-mongoose.connect('mongodb://db:27017/test', { useNewUrlParser: true, useUnifiedTopology: true }).then(res => server.listen(port, () => {
+mongoose.connect('mongodb://localhost:27017/test', { useNewUrlParser: true, useUnifiedTopology: true }).then(res => server.listen(port, () => {
     console.log(`Server running on PORT: ${port}`);
 })).catch(err => console.log(err));
 

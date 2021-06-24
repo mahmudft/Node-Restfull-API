@@ -13,7 +13,7 @@ GET  http://127.0.0.1:2000/goods HTTP/1.1
 content-type: application/json
 
 ###
-GET http://127.0.0.1:2000/goods/60ce463fea41cf1668f56b15
+GET http://127.0.0.1:2000/goods/60cde1be50ecc13a84c50126
 
 ###
 GET http://127.0.0.1:2000/goods/ff

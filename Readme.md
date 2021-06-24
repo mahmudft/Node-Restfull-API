@@ -11,6 +11,7 @@
 | /goods      | GET     | Send an Empty body to this route and this route will return a list of goods     |
 | /goods      | POST    |   **Only for test purposes -- Send an object and it will return the insterted item |
 | /goods/:id      | GET     | send id of an item and it will return full properties of it     |
+|/goods/:id  | DELETE | send id of an item and it will be removed 
 
 ## Docker Guide
 
